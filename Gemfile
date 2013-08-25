@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 
 group :production do
 	gem 'pg'
-	gem 'rails_12factor'
 end
 
 group :development, :test do
@@ -16,6 +15,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
